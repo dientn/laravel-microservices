@@ -79,6 +79,8 @@ In file config/services.json we are define the service and relations to service 
 },
 
 ```
+# Clone new service
+Clone new a service from service-template repo
 
 # Generate Route from doc api use swagger
 
@@ -156,6 +158,9 @@ Example routes.json after generate
 Done now you can access to gateway with api generated in routes.jon
 
 ex: api-gateway.<your-domain>/v1/test/info
+	
+In repo have two service there are core-service and test-service example
+
 
 
 
