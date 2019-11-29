@@ -1,6 +1,8 @@
 # laravel-microservices
 Microservices with Laravel Lumen
 
+The api-gateway use [PoweredLocal/vrata](https://github.com/PoweredLocal/vrata)
+
 ## Build Setup
 
 ``` bash
@@ -79,6 +81,8 @@ In file config/services.json we are define the service and relations to service 
 ```
 
 # Generate Route from doc api use swagger
+
+In Controller we will add swagger anotation to generate doc. can se more [zircote/swagger-php](https://github.com/zircote/swagger-php/tree/2.x)
 
 In the each service run commend above to generate swagger api json
 ``` bash
