@@ -1,0 +1,9 @@
+
+C	php:S11722".Remove the unused function parameter "$batch".(Øß‡®
+i	php:S3776T"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ÿ³Â¸
+b	php:S1192W"HDefine a constant instead of duplicating this literal "actions" 3 times.(Ñ¢Û¹şÿÿÿÿ
+Iphp:S121&"0Add curly braces around the nested statement(s).(ş×Íùÿÿÿÿ
+Dphp:S121C"0Add curly braces around the nested statement(s).(ÈŞ½Í
+Dphp:S121Y"0Add curly braces around the nested statement(s).(±Ğ—ì
+Ephp:S121"0Add curly braces around the nested statement(s).(áô‚û
+>	php:S1481f")Remove this unused "$key" local variable.(êñüî

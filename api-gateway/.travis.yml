@@ -1,0 +1,29 @@
+language: php
+
+services:
+  - docker
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+php:
+  - '7.1'
+
+install:
+  - composer install --dev
+  - mkdir -p build/logs
+  - docker build -t pwred/vrata .
+  - docker ps
+  - docker run -d --name app -e APP_KEY=EzMx2svtA1CsOzPrqE9EMmUkegls4mjv -e GATEWAY_SERVICES="[]" -e GATEWAY_ROUTES="[]" pwred/vrata; sleep 10
+
+script:
+  - docker exec app /bin/sh -c "cd /home/app; cat /dev/null >> database/gateway.sqlite; export APP_ENV=testing; export DB_DATABASE=database/gateway.sqlite; php artisan migrate --database=sqlite"
+  - docker exec app /bin/sh -c "cd /home/app; touch storage/logs/laravel.log; export APP_ENV=testing; export APP_DEBUG=true; ./vendor/bin/phpunit; phpdismod xdebug; ls -l storage/logs/laravel.log; cat storage/logs/laravel.log"
+  - docker cp app:/home/app/build/logs/clover.xml ./build/logs/clover.xml
+  - ./vendor/bin/test-reporter
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker commit app pwred/vrata
+  - docker push pwred/vrata

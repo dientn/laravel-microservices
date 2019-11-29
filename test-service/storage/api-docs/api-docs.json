@@ -1,0 +1,36 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "CargoPedia Test API",
+        "version": "1.0.0"
+    },
+    "basePath": "/test",
+    "paths": {
+        "/home": {
+            "get": {
+                "description": "Home page",
+                "responses": {
+                    "200": {
+                        "description": "Welcome page"
+                    }
+                },
+                "x-roles": "admin"
+            }
+        },
+        "/info": {
+            "get": {
+                "description": "Info page",
+                "responses": {
+                    "200": {
+                        "description": "Info page"
+                    }
+                },
+                "x-roles": [
+                    "admin",
+                    "guest"
+                ]
+            }
+        }
+    },
+    "definitions": {}
+}

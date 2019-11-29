@@ -1,0 +1,13 @@
+
+H	php:S1172œ"-Remove the unused function parameter "$data".(ª•³ùÿÿÿÿ
+f	php:S1192{"LDefine a constant instead of duplicating this literal "description" 3 times.(ŠÏè£ùÿÿÿÿ
+a	php:S1192:"GDefine a constant instead of duplicating this literal "global" 3 times.(Á”¢óúÿÿÿÿ
+b	php:S1192"GDefine a constant instead of duplicating this literal "method" 5 times.(·éâæùÿÿÿÿ
+b	php:S1192|"NDefine a constant instead of duplicating this literal "swagger2-data" 4 times.(ÈœêI
+]	php:S1192Z"HDefine a constant instead of duplicating this literal "service" 3 times.(Èßäê
+9php:S125‡"Remove this commented out code.(ö—ÒØÿÿÿÿÿ
+Iphp:S121B"0Add curly braces around the nested statement(s).(ú®”„üÿÿÿÿ
+Iphp:S121D"0Add curly braces around the nested statement(s).(§¢È½ÿÿÿÿÿ
+Dphp:S121G"0Add curly braces around the nested statement(s).(ŸËû
+Ephp:S121"0Add curly braces around the nested statement(s).(æò¤Ş
+Ephp:S121Í"0Add curly braces around the nested statement(s).(±ğ•ç

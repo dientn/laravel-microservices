@@ -1,0 +1,7 @@
+/vendor
+.env
+/database/database.sqlite
+/tests/tmp
+storage/oauth-private.key
+storage/oauth-public.key
+.idea

@@ -1,0 +1,9 @@
+<?php
+$serviceConfig = [
+    "service_name"=> env("SERVICE_NAME","test")
+];
+$configPath = __DIR__.'/../../config/services.json';
+$config = json_decode(file_get_contents($configPath), true);
+$serviceConfig['config'] = $config;
+
+return $serviceConfig;

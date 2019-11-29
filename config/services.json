@@ -1,0 +1,18 @@
+{
+    "services": {
+        "core": {
+            "url": "http://core.cargopedia.local/",
+            "relations": [
+            ]
+        },
+        "test": {
+            "url": "http://test.cargopedia.local/",
+            "relations": [
+                "core"
+            ]
+        }
+    },
+    "global": {
+
+    }
+}
