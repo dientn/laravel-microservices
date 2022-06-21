@@ -10,7 +10,7 @@
 	    "doctrine/dbal": "~2.3",
         "vlucas/phpdotenv": "~2.2",
         "appzcoder/lumen-routes-list": "^1.0",
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "~7.4",
         "webpatser/laravel-uuid": "2.*",
         "league/flysystem": "^1.0",
         "barryvdh/laravel-cors": "^0.11",
